@@ -1,0 +1,108 @@
+/* Загальні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0e7ff, #f4f4f9);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #222;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+/* Стилі кнопок і посилань */
+a, button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 14px 25px;
+    background-color: #0d6efd;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+    cursor: pointer;
+    text-align: center;
+}
+
+a:hover, button:hover {
+    background-color: #0a58ca;
+    box-shadow: 0 6px 15px rgba(10, 88, 202, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Секція геолокації */
+#location {
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+}
+
+/* Галерея */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 25px 0;
+    padding: 0 20px;
+}
+
+.gallery-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.gallery-photo:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Акселерометр */
+#accelerationData {
+    margin-top: 25px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#accelerationData p {
+    margin: 8px 0;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    a, button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .gallery-photo {
+        width: 90px;
+        height: 90px;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cordova App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Головна сторінка</h1>
+    <a href="gallery.html">Переглянути галерею</a>
+    <a href="tasks.html">Переглянути список завдань</a>
+    
+    <!-- Кнопка для отримання геолокації -->
+    <button onclick="toggleLocation()">Отримати геолокацію</button>
+    <p id="location" style="display: none;"></p>
+    
+    <!-- Кнопка для отримання даних акселерометра -->
+    <button onclick="toggleAccelerationData()">Отримати дані акселерометра</button>
+    
+    <!-- Блок для виводу даних акселерометра-->
+    <div id="accelerationData" style="display: none;">
+        <p>Acceleration X: <span id="accelerationX">-</span></p>
+        <p>Acceleration Y: <span id="accelerationY">-</span></p>
+        <p>Acceleration Z: <span id="accelerationZ">-</span></p>
+    </div>
+    
+    <script src="cordova.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
